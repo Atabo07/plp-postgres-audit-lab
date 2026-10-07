@@ -1,0 +1,8 @@
+# Optional: throwaway PostgreSQL if you don't have one installed.
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: bootcamp
+    ports: ["5432:5432"]
